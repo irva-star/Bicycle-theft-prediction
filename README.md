@@ -28,3 +28,5 @@ The goal of this project is to:
 
 - Benjamin Lefebvre
 - Noveen Mirza
+- Jeff Sy
+- Konain Zahra
