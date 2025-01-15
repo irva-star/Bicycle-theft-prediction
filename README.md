@@ -25,8 +25,6 @@ The goal of this project is to:
 ---
 
 ## ✨ Team 4
-- Landon Essex
+
 - Benjamin Lefebvre
 - Noveen Mirza
-- Jeff Sy
-- Konain Zahra
