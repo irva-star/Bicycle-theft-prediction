@@ -1,0 +1,16 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install dependencies
+COPY react_client/package.json react_client/package-lock.json ./
+RUN npm ci
+
+# Copy frontend source
+COPY react_client/ ./
+
+# Expose Vite dev server port
+EXPOSE 5173
+
+# Start the dev server (accessible from outside container)
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

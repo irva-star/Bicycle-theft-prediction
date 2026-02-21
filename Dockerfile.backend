@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy backend source and data
+COPY python_server/ ./python_server/
+
+# Expose Flask port
+EXPOSE 5000
+
+# Run the Flask server
+CMD ["python", "python_server/test.py"]
